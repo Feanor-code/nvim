@@ -31,7 +31,7 @@ vim.diagnostic.config({ virtual_text = true })
 
 vim.keymap.set({ "n", "v" }, "y", "\"+y")
 vim.keymap.set({ "n", "v" }, "p", "\"+p")
-vim.keymap.set("n", "ai", ":Sidekick cli show name=qwen<CR>")
+vim.keymap.set("n", "ii", ":Sidekick cli show name=qwen<CR>")
 vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]]) -- сделать окно больше по вертикали
 vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]]) -- сделать окно меньше по вертикали
 vim.keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]]) -- сделать окно больше по горизонтали, нажав shift и =

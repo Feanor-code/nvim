@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<C-A>", ":Sidekick cli show name=qwen<CR>")
+vim.keymap.set("n", "<C-A>", ":Sidekick cli show name=copilot<CR>")
 vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]])
 vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]])
 vim.keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]])

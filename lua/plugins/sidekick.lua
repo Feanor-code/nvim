@@ -1,1 +1,6 @@
-return { "folke/sidekick.nvim", config = true }
+return { 
+	"folke/sidekick.nvim",
+	config = true,
+	opts = {
+	}
+}

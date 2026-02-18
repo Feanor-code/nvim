@@ -8,7 +8,11 @@ return {
 	  ---@module "fzf-lua"
 	  ---@type fzf-lua.Config|{}
 	  ---@diagnostic disable: missing-fields
-	  opts = {}
+	  opts = {
+		  winopts = {
+			  backdrop = false
+		  }
+	  }
 	  ---@diagnostic enable: missing-fields
 	}
 }

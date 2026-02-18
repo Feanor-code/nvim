@@ -1,3 +1,5 @@
+-- vim.keymap.set("n", ":", "<Plug>(cmdpalette)")
+vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
 vim.keymap.set("n", "<C-A>", ":Sidekick cli show name=copilot<CR>")
 vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]])
 vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]])

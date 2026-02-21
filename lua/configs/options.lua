@@ -23,6 +23,7 @@ vim.g.nord_uniform_diff_background = true
 vim.g.nord_bold = false
 vim.g.nord_enable_sidebar_background = false
 vim.opt.clipboard = "unnamedplus"
+vim.o.winborder = "rounded"
 
 local options = {
     mouse = "a",

@@ -18,5 +18,20 @@ return {
 			"neovim/nvim-lspconfig",
 		},
 	},
-	{ "neovim/nvim-lspconfig" }
+	{ "neovim/nvim-lspconfig" },
+	config = function()
+		local lspconfig = require("lspconfig")
+
+		-- 👇 связь cmp ↔ lsp
+		local capabilities =
+			require("cmp_nvim_lsp").default_capabilities()
+
+		lspconfig.lua_ls.setup({
+			capabilities = capabilities,
+		})
+
+		lspconfig.clangd.setup({
+			capabilities = capabilities,
+		})
+	end,
 }
